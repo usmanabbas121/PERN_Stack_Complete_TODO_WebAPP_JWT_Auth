@@ -20,14 +20,6 @@ const ListTodos = ({ allTodos, setTodosChange }) => {
     }
   }
 
-  // async function getTodos() {
-  //   const res = await fetch("http://localhost:5000/todos");
-
-  //   const todoArray = await res.json();
-
-  //   setTodos(todoArray);
-  // }
-
   useEffect(() => {
     setTodos(allTodos);
   }, [allTodos]);
